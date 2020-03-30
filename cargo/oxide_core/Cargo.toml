@@ -1,0 +1,11 @@
+[package]
+name = "oxide_core"
+version = "0.1.0"
+authors = ["Maciej Zaręba <mzareba1997@gmail.com>"]
+license = 'MIT'
+description = ''
+keywords = ["gui", "GUI", "user interface", "xaml", "graphics"]
+edition = "2018"
+
+[lib]
+path = "../../oxide_core/lib.rs"
