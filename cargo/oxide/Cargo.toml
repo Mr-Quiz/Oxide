@@ -10,8 +10,5 @@ edition = "2018"
 [lib]
 path = "../../oxide/lib.rs"
 
-#[dependencies]
-#oxide_ox_parser = { path = "../../cargo/oxide_ox_parser", default-features = false, optional = true }
-#
-#[features]
-#oxide_ox_parser = ["oxide_ox_parser"]
+[dependencies]
+oxide_core = { path = "../oxide_core" }

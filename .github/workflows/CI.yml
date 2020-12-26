@@ -1,0 +1,23 @@
+name: Unit Tests
+on:
+  pull_request:
+    branches:
+      - `feature/**`
+      - `bugfix/**`
+env:
+  CARGO_TERM_COLOR: always
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build
+        run: cargo build --verbose
+      - name: Run Oxide Tests
+        run: cargo test --package oxide --no-fail-fast -- -Z unstable-options --format=terse
+      - name: Run Oxide Core Tests
+        run: cargo test --package oxide_core --no-fail-fast -- -Z unstable-options --format=terse
+      - name: Run Oxide Ox Parser Tests
+        run: cargo test --package oxide_ox_parser --no-fail-fast -- -Z unstable-options --format=terse
+      - name: Run Oxide Widgets Tests
+        run: cargo test --package oxide_widgets --no-fail-fast -- -Z unstable-options --format=terse

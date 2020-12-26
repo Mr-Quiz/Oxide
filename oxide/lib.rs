@@ -1,5 +1,6 @@
-use oxide_ox_parser;
+extern crate oxide_core;
 
-pub fn main() {
-
-}
+pub mod oxide;
+pub mod settings;
+pub mod route;
+mod tests;

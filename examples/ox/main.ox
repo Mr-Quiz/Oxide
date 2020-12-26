@@ -1,4 +1,4 @@
-<ox:component controller="test" style="roll">
+<ox:component controller="test">
 
     <ox:generic>
         <ox:generic style="test">
