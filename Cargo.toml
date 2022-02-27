@@ -1,8 +1,8 @@
 [workspace]
 members = [
-   "cargo/oxide",
-   "cargo/oxide_core",
-   "cargo/oxide_ox_parser",
-   "cargo/oxide_widgets",
-   "oxide_test"
+  "cargo/oxide",
+  "cargo/oxide_core",
+  "cargo/oxide_ox_parser",
+  "cargo/oxide_widgets",
+  "oxide_test"
 ]

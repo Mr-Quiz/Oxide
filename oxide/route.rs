@@ -4,10 +4,8 @@ use oxide_core::model::Component;
 
 #[derive(Debug)]
 pub struct Route {
-    pub component:  Option<Component>,
-    pub path:       String,
+  pub component: Option<Component>,
+  pub path: String,
 }
 
-impl Route {
-    
-}
+impl Route {}
